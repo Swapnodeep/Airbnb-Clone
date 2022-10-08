@@ -1,0 +1,47 @@
+:root {
+  --main-airbnb-color: #ff7779;
+}
+
+.banner {
+  height: 50vh;
+  position: relative;
+  background: url("https://media.cntraveler.com/photos/5db1d0dd11c1e500092e7133/master/pass/airbnb-ski-aspen-28328347.jpg")
+    center center;
+}
+
+.banner__search {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__searchButton {
+  background-color: white !important;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  color: var(--main-airbnb-color) !important;
+}
+
+.banner__info {
+  background-color: black;
+  color: white;
+  padding: 25vh 50px 40px;
+  width: 300px;
+}
+
+.banner__info > button {
+  background-color: var(--main-airbnb-color);
+  color: white;
+  /* text-transform - specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. */
+  text-transform: inherit;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.banner__info > button:hover {
+  background-color: white;
+  color: var(--main-airbnb-color);
+}
+
+.banner__info > h5 {
+  margin-top: 10px;
+}
