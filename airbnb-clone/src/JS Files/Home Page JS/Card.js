@@ -1,4 +1,5 @@
 import React from "react";
+
 import "../../CSS Files/Home Page CSS/Card.css";
 
 // Props makes a component look different but reusable

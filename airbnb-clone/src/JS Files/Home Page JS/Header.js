@@ -1,15 +1,21 @@
 import React from "react";
-import "../../CSS Files/Home Page CSS/Header.css";
+import { Link } from "react-router-dom";
+
+import { Avatar } from "@material-ui/core";
 import LanguageIcon from "@material-ui/icons/Language";
 import SearchIcon from "@material-ui/icons/Search";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { Avatar } from "@material-ui/core";
+
+import "../../CSS Files/Home Page CSS/Header.css";
 
 function Header() {
   return (
     <div className="header">
-      {/* Airbnb Logo */}
-      <img className="header__icon" src="./Images/Airbnb.jpg" alt="Airbnb" />
+      {/* a tag leads to refreshing the page. So, not using that. */}
+      <Link to="/">
+        {/* Airbnb Logo */}
+        <img className="header__icon" src="./Images/Airbnb.jpg" alt="Airbnb" />
+      </Link>
 
       {/* Search Bar */}
       <div className="header__center">
@@ -23,7 +29,7 @@ function Header() {
 
       <div className="header__right">
         <p>Become a host</p>
-        <LanguageIcon/>
+        <LanguageIcon />
         <ExpandMoreIcon />
         <Avatar />
       </div>

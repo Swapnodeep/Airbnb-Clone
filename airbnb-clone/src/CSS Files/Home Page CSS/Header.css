@@ -21,23 +21,23 @@
 }
 
 .header__center {
-    display: flex;
-    /* Giving max possible space to central div */
-    flex: 1;
-    align-items: center;
-    /* Centering the elements */
-    max-width: fit-content;
-    padding: 10px;
-    height: 30px;
-    border: 1px solid lightgray;
-    border-radius: 999px;
+  display: flex;
+  /* Giving max possible space to central div */
+  flex: 1;
+  align-items: center;
+  /* Centering the elements */
+  max-width: fit-content;
+  padding: 10px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 999px;
 }
 
 .header__center > input {
-    border: none;
-    /* width: 250px; */
-    padding: 10px;
-    outline-width: 0;
+  border: none;
+  /* width: 250px; */
+  padding: 10px;
+  outline-width: 0;
 }
 
 .header__right {

@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import "../../CSS Files/Home Page CSS/Search.css";
-import "react-date-range/dist/styles.css"; // Main Style file
-import "react-date-range/dist/theme/default.css"; // Theme css file
+import { useNavigate } from "react-router-dom";
+
+// Date Picker imports
 import { DateRangePicker } from "react-date-range";
+import "react-date-range/dist/theme/default.css"; // Theme css file
+import "react-date-range/dist/styles.css"; // Main Style file
+
 import { Button } from "@material-ui/core";
-import PeopleIcon from '@material-ui/icons/People';
+import PeopleIcon from "@material-ui/icons/People";
+
+import "../../CSS Files/Home Page CSS/Search.css";
 
 // Date Picker Component
 // npm i react-date-range
@@ -29,18 +34,23 @@ function Search() {
     setEndDate(ranges.selection.endDate);
   }
 
+  // Navigation Hook
+  const navigate = useNavigate();
+
   return (
     <div className="search">
       <DateRangePicker
         ranges={[selectionRange]}
         onChange={handleSelect}
       ></DateRangePicker>
-      
-      <h2>Number of guests <PeopleIcon /></h2>
-    
+
+      <h2>
+        Number of guests <PeopleIcon />
+      </h2>
+
       <input min={0} defaultValue={2} type="number" />
 
-      <Button>Search Airbnb</Button>
+      <Button onClick={() => navigate("/Search")}>Search Airbnb</Button>
     </div>
   );
 }

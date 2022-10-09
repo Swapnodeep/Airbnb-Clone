@@ -1,4 +1,5 @@
 import React from "react";
+
 import "../../CSS Files/Home Page CSS/Home.css";
 import Banner from "./Banner";
 import Card from "./Card";

@@ -42,6 +42,6 @@
 }
 
 .search > button:hover {
-    background-color: white;
-    color: var(--main-airbnb-color);
+  background-color: white;
+  color: var(--main-airbnb-color);
 }
