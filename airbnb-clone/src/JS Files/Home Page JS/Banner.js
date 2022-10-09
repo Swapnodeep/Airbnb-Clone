@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "@material-ui/core";
-import "./Banner.css";
+import "../../CSS Files/Home Page CSS/Banner.css";
 import Search from "./Search";
 
 function Banner() {

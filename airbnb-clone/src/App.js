@@ -1,6 +1,7 @@
 import "./App.css";
-import Header from "./Header";
-import Home from "./Home";
+import Header from "./JS Files/Home Page JS/Header";
+import Home from "./JS Files/Home Page JS/Home";
+import Footer from "./JS Files/Home Page JS/Footer";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
     <div className="app">
       <Header/>
       <Home/>
+      <Footer/>
 
       {/* Home */}
       {/* Header - Logo, Search Bar, Profile Details*/}
